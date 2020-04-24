@@ -1,0 +1,18 @@
+<!doctype html>
+<html class="smooth" lang="fr">
+    <head id="head">
+        {% include "partials/head.twig" %}
+    </head>
+    <body id="body" class="white bk-black body font-1">
+
+        {% block tmp_slide %}{% endblock %}
+        {% include "partials/header.twig" %}
+        {% block content %}{% endblock %}
+        {% include 'views/partials/up.twig' %}
+        {% include "partials/footer.twig" %}
+        {% include "partials/script.twig" %}
+{#pour pouvoir inserer js de Contact_form - Obligatoire!!!!!!#}
+    {{ function('wp_footer') }}
+    </body>
+
+</html>

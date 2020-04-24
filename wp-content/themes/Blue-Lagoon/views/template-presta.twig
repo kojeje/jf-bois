@@ -1,0 +1,331 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <section class="section row w-90 m-a ">
+        <div class="container-fluid content-wrapper article_content show-content">
+            <article class="post-type-{{post.post_type}} show_teaser" id="post-{{post.ID}}">
+
+
+
+                <h1 class="color-2 t-a-center m-t30">{{ post.title }}</h1>
+                <div class="article-content w-80 m-a">
+
+                    <img src="{{post.thumbnail.src}}" alt="affiche" class="affiche w-50 w-md-30 m-r30 d-b">
+
+                    <div class="t3 p10 p-t0">
+                        {{ post.content }}
+                    </div>
+
+
+                </div>
+
+                {% include '/views/partials/buttons/anch-button/button-anch-1.twig' %}
+                <a id="article-anch-1" class="d-b"></a>
+                <div class="prestas d-f fw spA w-100 w-md-80 m-a t-a-center p30 border-md-3px rad-md50 brd-color-2 m-t10">
+                    <div class="w-100">
+                        <h1 class="t-md-6 t4 p10 w-100 w-md-30 t-a-center border-b-3px brd-b-color-2 border-l-3px brd-l-color-2">
+                            <i class="fal fa-tree-large"></i>
+                            <span class="color-2">Exemples</span>
+                        </h1>
+                    </div>
+                    {#details 1#}
+                    {% if post.get_field('field_5d334feddfbae') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+
+
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d334feddfbae') }}
+                            </h5>
+
+
+                            {% if post.get_field('field_5d335019dfbaf') %}
+                                <img src="{{ post.get_field('field_5d335019dfbaf') }}" alt="" class=" img">
+
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    {#details 2#}
+                    {% if post.get_field('field_5d33508fdfbb0') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d33508fdfbb0') }}
+                            </h5>
+
+
+                            {% if post.get_field('field_5d3350d9dfbb1') %}
+                                <img src="{{ post.get_field('field_5d3350d9dfbb1') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 3#}
+                    {% if post.get_field('field_5d335126dfbb3') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d335126dfbb3') }}
+                            </h5>
+
+                            {% if post.get_field('field_5d335138dfbb4') %}
+                                <img src="{{ post.get_field('field_5d335138dfbb4') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 4#}
+                    {% if post.get_field('field_5d335184dfbb5') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d335184dfbb5') }}
+                            </h5>
+
+                            {% if post.get_field('field_5d335197dfbb6') %}
+                                <img src="{{ post.get_field('field_5d335197dfbb6') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 5#}
+                    {% if post.get_field('field_5d3351a4dfbb7') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d3351a4dfbb7') }}
+                            </h5>
+                            {% if post.get_field('field_5d3351aedfbb8') %}
+                                <img src="{{ post.get_field('field_5d3351aedfbb8') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 6#}
+                    {% if post.get_field('field_5d335266dfbb9') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d335266dfbb9') }}
+                            </h5>
+
+                            {% if post.get_field('field_5d335271dfbba') %}
+                                <img src="{{ post.get_field('field_5d335271dfbba') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 7#}
+                    {% if post.get_field('field_5d335297dfbbb') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title mb-50">
+                                {{ post.get_field('field_5d335297dfbbb') }}
+                            </h5>
+
+                            {% if post.get_field('field_5d3352a4dfbbc') %}
+                                <img src="{{ post.get_field('field_5d3352a4dfbbc') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 8#}
+                    {% if post.get_field('field_5d3352b9dfbbd') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d3352b9dfbbd') }}
+                            </h5>
+
+                            {% if post.get_field('field_5d3352c1dfbbe') %}
+                                <img src="{{ post.get_field('field_5d3352c1dfbbe') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 9#}
+                    {% if post.get_field('field_5d3352d5dfbbf') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d3352d5dfbbf') }}
+                            </h5>
+
+                            {% if post.get_field('field_5d3352e0dfbc0') %}
+                                <img src="{{ post.get_field('field_5d3352e0dfbc0') }}" alt="" class=" img">
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                    {#details 10#}
+                    {% if post.get_field('field_5d3352f0dfbc1') %}
+                        <div class="detail-presta w-md-30 w-100 m-t50">
+                            <h5 class=" presta-title m-b50">
+                                {{ post.get_field('field_5d3352f0dfbc1') }}
+                            </h5>
+                            {% if post.get_field('field_5d3352f0dfbc1') %}
+                                <img src="{{ post.get_field('field_5d3352f0dfbc1') }}" alt="" class=" img">
+                            {% endif %}
+                        </div>
+                    {% endif %}
+
+                </div>
+
+
+            </article>
+            {#<article class="row post-type-{{post.post_type}} show_teaser" id="post-{{post.ID}}">#}
+                {#<div class="offset-md-2"></div>#}
+                {#<div class="col-md-3 article-content">#}
+                    {#<div class="affiche">#}
+                        {#<img class="img" src="{{post.thumbnail.src}}" alt="affiche" class="affiche">#}
+                    {#</div>#}
+                {#</div>#}
+
+                {#<div class="col-md-4 col-12 article-content">#}
+                    {#<h1 class="color-2 t-a-center m-t30">{{ post.title }}</h1>#}
+                    {#{{ post.content }}#}
+                {#</div>#}
+
+                {#<div class="offset-md-2"></div>#}
+                {#{% include '/views/partials/buttons/anch-button/button-anch-1.twig' %}#}
+                {#<a id="article-anch-1" class="d-b"></a>#}
+                {#<div class="prestas d-f fw spA w-100 w-md-80 m-a t-a-center p30 border-md-3px rad-md50 brd-color-2 m-t10">#}
+                    {#<div class="w-100">#}
+                        {#<h1 class="t-md-6 t4 p10 w-100 w-md-30 t-a-center border-b-3px brd-b-color-2 border-l-3px brd-l-color-2">#}
+                            {#<i class="fal fa-tree-large"></i>#}
+                            {#<span class="color-2">Exemples</span>#}
+                        {#</h1>#}
+                    {#</div>#}
+                    {#details 1#}
+                    {#{% if post.get_field('field_5d334feddfbae') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+
+
+                                {#<h5 class=" presta-title m-b50">#}
+                                    {#{{ post.get_field('field_5d334feddfbae') }}#}
+                                {#</h5>#}
+
+
+                            {#{% if post.get_field('field_5d335019dfbaf') %}#}
+                                {#<img src="{{ post.get_field('field_5d335019dfbaf') }}" alt="" class=" img">#}
+
+                            {#{% endif %}#}
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 2#}
+                    {#{% if post.get_field('field_5d33508fdfbb0') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+
+                                {#<h5 class=" presta-title m-b50">#}
+                                    {#{{ post.get_field('field_5d33508fdfbb0') }}#}
+                                {#</h5>#}
+
+
+                            {#{% if post.get_field('field_5d3350d9dfbb1') %}#}
+                                {#<img src="{{ post.get_field('field_5d3350d9dfbb1') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 3#}
+                    {#{% if post.get_field('field_5d335126dfbb3') %}#}
+                    {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d335126dfbb3') }}#}
+                            {#</h5>#}
+
+                        {#{% if post.get_field('field_5d335138dfbb4') %}#}
+                            {#<img src="{{ post.get_field('field_5d335138dfbb4') }}" alt="" class=" img">#}
+                        {#{% endif %}#}
+
+                    {#</div>#}
+                    {#{% endif %}#}
+                    {#details 4#}
+                    {#{% if post.get_field('field_5d335184dfbb5') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d335184dfbb5') }}#}
+                            {#</h5>#}
+
+                            {#{% if post.get_field('field_5d335197dfbb6') %}#}
+                                {#<img src="{{ post.get_field('field_5d335197dfbb6') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 5#}
+                    {#{% if post.get_field('field_5d3351a4dfbb7') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d3351a4dfbb7') }}#}
+                            {#</h5>#}
+                            {#{% if post.get_field('field_5d3351aedfbb8') %}#}
+                                {#<img src="{{ post.get_field('field_5d3351aedfbb8') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 6#}
+                    {#{% if post.get_field('field_5d335266dfbb9') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d335266dfbb9') }}#}
+                            {#</h5>#}
+
+                            {#{% if post.get_field('field_5d335271dfbba') %}#}
+                                {#<img src="{{ post.get_field('field_5d335271dfbba') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 7#}
+                    {#{% if post.get_field('field_5d335297dfbbb') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title mb-50">#}
+                                {#{{ post.get_field('field_5d335297dfbbb') }}#}
+                            {#</h5>#}
+
+                            {#{% if post.get_field('field_5d3352a4dfbbc') %}#}
+                                {#<img src="{{ post.get_field('field_5d3352a4dfbbc') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 8#}
+                    {#{% if post.get_field('field_5d3352b9dfbbd') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d3352b9dfbbd') }}#}
+                            {#</h5>#}
+
+                            {#{% if post.get_field('field_5d3352c1dfbbe') %}#}
+                                {#<img src="{{ post.get_field('field_5d3352c1dfbbe') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                         {#</div>#}
+                    {#{% endif %}#}
+                    {#details 9#}
+                    {#{% if post.get_field('field_5d3352d5dfbbf') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d3352d5dfbbf') }}#}
+                            {#</h5>#}
+
+                            {#{% if post.get_field('field_5d3352e0dfbc0') %}#}
+                                {#<img src="{{ post.get_field('field_5d3352e0dfbc0') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+
+                        {#</div>#}
+                    {#{% endif %}#}
+                    {#details 10#}
+                    {#{% if post.get_field('field_5d3352f0dfbc1') %}#}
+                        {#<div class="detail-presta w-md-30 w-100 m-t50">#}
+                            {#<h5 class=" presta-title m-b50">#}
+                                {#{{ post.get_field('field_5d3352f0dfbc1') }}#}
+                            {#</h5>#}
+                            {#{% if post.get_field('field_5d3352f0dfbc1') %}#}
+                                {#<img src="{{ post.get_field('field_5d3352f0dfbc1') }}" alt="" class=" img">#}
+                            {#{% endif %}#}
+                        {#</div>#}
+                    {#{% endif %}#}
+
+                {#</div>#}
+
+
+            {#</article>#}
+        </div>
+    </section>
+
+{% endblock %}

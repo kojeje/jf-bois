@@ -1,0 +1,46 @@
+//none
+.none{
+  display: none;
+}
+// inline
+.d-i{
+  display: inline;
+}
+// inline block
+.d-i-b{
+  display: inline-block;
+}
+
+// block
+.d-b{
+  display: block;
+}
+
+// flex
+.d-f{
+  display: flex;
+}
+
+// space-around
+.spA {
+  justify-content: space-around;
+}
+//space-between
+.spB {
+  justify-content: space-between;
+}
+//center
+.C{
+  justify-content: center;
+}
+.fw{
+  flex-wrap: wrap;
+}
+//-------------- OPACITE
+.op0{
+  opacity: 0;
+}
+.op1{
+  opacity: 1;
+}
+

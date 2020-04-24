@@ -1,0 +1,30 @@
+{%  block content %}
+
+    <article class="article">
+        {#Section accueil#}
+        <section class="section w-90 m-a">
+            <a id="article-anch-1" class="d-b" ></a>
+
+            <div class="m-b50">
+
+                <h1 class="t6 p10 t-a-center border-b-3px brd-b-color-2 border-l-3px brd-l-color-2  w-70 m-a">
+                    <i class="fal fa-tree-palm"></i>
+                    <span class="color-2">{{ post.title }}</span>
+                </h1>
+                <div class="w-90 t3 p30 m-a">{{ post.content }}</div>
+
+
+                <div class="m-a">
+                    {% include '/views/partials/buttons/anch-button/button-anch-2.twig' %}
+                </div>
+
+            </div>
+            <hr class="w-80 m-a bk-color-2 m-t100 ">
+        </section>
+
+
+        </section>
+
+
+    </article>
+{% endblock %}

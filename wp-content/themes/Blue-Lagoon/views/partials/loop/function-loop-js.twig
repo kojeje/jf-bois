@@ -1,0 +1,14 @@
+<div class="row my-shuffle-container">
+    {% for function in functions %}
+    <figure class="col-4 picture-item" data-groups='["animal"]' data-date-created="{{ function.date }}" data-title="Crocodile">
+        <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+                <img src="{{ function.thumbnail.src }}" alt="A close, profile view of a crocodile looking directly into the camera" />
+            </div>
+        </div>
+        <figcaption>{{ function.title }}</figcaption>
+    </figure>
+   {% endfor %}
+    <div class="col-1@sm my-sizer-element"></div>
+
+</div>

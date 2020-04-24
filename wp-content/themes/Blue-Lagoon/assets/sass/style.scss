@@ -1,0 +1,131 @@
+@import "partials/vars";
+@import "partials/fonts";
+@import "partials/states";
+@import "partials/colors";
+@import "partials/border";
+@import "partials/background";
+@import "partials/display";
+@import "partials/blocks";
+@import "partials/deco.scss";
+@import "partials/padding-margin";
+
+.body{
+  padding: 0;
+  }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.iframe{
+  height: 50vh !important;
+  position: relative !important;
+}
+.link{
+  transition: 0.3s;
+}
+
+.caldera-grid input[type=file] {
+  width: 80%;
+  font-size: 100% !important;
+}
+#article-anch-1,
+#article-anch-2,
+#article-anch-3,
+#article-anch-4,
+#article-anch-5,
+#article-anch-6
+{
+  width: 100%;
+  height: 20vh;
+}
+h3{
+  color: $color-2;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.url{
+  font-size: 20px;
+  color: aquamarine;
+}
+
+//-----------------------------------------------------------------------------------
+// Entrez votre personnalisation scss ici
+.h-2{
+  height: 2vh !important;
+}
+.h10{
+  height: 10px !important;
+}
+.presta-list{
+  width: 70%;
+  margin: auto;
+}
+.contact_form{
+  overflow-y: hidden;
+}
+
+.totop i
+{
+  font-size:40px;
+  display: block;
+  text-align: center;
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.totop
+{
+
+  position: sticky;
+  bottom: 10vh;
+  margin-left: 85%;
+  cursor: pointer;
+  padding: 10px;
+  font-size:8px;
+  display: block;
+  transition: 0.6s;
+  z-index: 1;
+  opacity: 0.5;
+
+}
+.slide{
+  z-index: 2;
+}
+.btn-secondary{
+  background-color: black !important;
+  border-color: #000;
+}
+.dropdown-menu {
+  transform: translate3d(-84%, 0px, 0px) !important;
+  overflow-y: auto;
+  pointer-events: auto;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background: #000;
+  padding: 60px;
+  padding-top: 0;
+  padding-bottom: 20px;
+  left: 0;
+  z-index: 500;
+  height: 100vh;
+  opacity: 1 !important;
+}
+.dropdown-item{
+  color: $color-2 !important;
+  padding: 20px;
+}
+
+.sr-only{
+  height: 50px !important;
+  width: 50px !important;
+}
+.affiche{
+ 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+//-----------------------------------------------------------------------------------
+@import "partials/responsive_tablet";
+@import "partials/responsive_desktop";

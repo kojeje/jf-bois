@@ -1,0 +1,78 @@
+//----------------------position
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+
+.stick{
+  position: sticky;
+}
+// blocks spécifiques
+h1{
+  margin-bottom: 2vh;
+}
+.iframe,
+.img{
+  display: block;
+  width: 100%;
+}
+
+// articles
+
+// medaillon-articles
+.post-medal
+{
+  padding: 2%;
+  width: 25%;
+}
+.sticky{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+//------------------Forms & fields
+
+
+
+
+
+//popup sur toute la page (a afficher ou non avec bootstrap ou none
+.grand-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:10;
+  width: 100vw;
+  height: 100vh;
+}
+//propriétés header
+.header{
+  height: 20vh;
+  z-index: 10;
+}
+
+
+//proppriétés footer
+.footer{
+  height:10vh;
+}
+//--------------------------------Boutons
+
+
+
+//Boutons sliders
+.carousel-control-prev,
+.carousel-control-next{
+  opacity: 0.1 !important;
+}
+
+.caption{
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
