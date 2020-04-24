@@ -1,0 +1,24 @@
+{% extends 'base.twig' %}
+{%  block content %}
+    <a id="article-anch-1" class="d-b h10" ></a>
+    <article class="article m-t100 bk-black">
+        {#Section accueil#}
+        <section class="section w-90 m-a m-t30">
+
+
+            <div class="m-b50">
+
+                <h1 class="t6 p10 t-a-center border-b-3px brd-b-color-2 border-l-3px brd-l-color-2  w-70 m-a">
+                    <i class="fal fa-tree-palm"></i>
+                    <span class="color-2">{{ post.title }}</span>
+                </h1>
+                <div class="w-90 t3 p30 m-a">{{ post.content }}</div>
+            </div>
+        </section>
+
+
+
+
+
+    </article>
+{% endblock %}

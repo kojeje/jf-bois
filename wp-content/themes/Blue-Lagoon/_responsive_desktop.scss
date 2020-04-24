@@ -1,0 +1,42 @@
+@media screen and (min-width:992px){
+  // blocks spécifiques
+  h1{
+    margin-bottom: 10vh;
+
+  }
+  .bottom-lg-20{
+    bottom: 20vh;
+  }
+  .m-lg-50{
+    margin: 50px !important;
+  }
+  .w-lg-30{
+    width: 30% !important;
+  }
+  .op-lg-0{
+    opacity: 0;
+  }
+  .article{
+    padding: 2%;
+  }
+  //propriétés section
+  .section,
+  .article{
+
+    margin-top: 10vh;
+  }
+  .caldera-grid input[type=file] {
+    width: 80%;
+    font-size: 50%;
+  }
+  .totop
+  {
+    margin-left: 95%;
+  }
+  .parallax2{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}

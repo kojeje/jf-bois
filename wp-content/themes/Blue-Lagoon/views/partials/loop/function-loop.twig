@@ -1,0 +1,19 @@
+<div class="fw d-f spA">
+{% for presta in prestas %}
+    {% if presta.terms('category')|join == 'prestation' %}
+        <a class="d-b w-lg-30 w-md-40" href="{{ presta.link }}">
+            <div class="m20 m-lg-50 relative">
+                <div>
+                    <img src="{{presta.thumbnail.src}}" alt="" class="img">
+                    <div class="op-lg-0 t4 t-md-5 p-t30 t-a-center absolute w-100 h-100 white bk-color-6 overlay tr t3 top0">{{ presta.title }}</div>
+                </div>
+
+            </div>
+        </a>
+    {% endif %}
+{% endfor %}
+</div>
+{% include '/views/partials/buttons/anch-button/button-anch-4.twig' %}
+
+
+
